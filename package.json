@@ -12,6 +12,8 @@
   },
   "dependencies": {
     "gsap": "^3.9.1",
-    "install-peers": "^1.0.3"
+    "install-peers": "^1.0.3",
+    "vite-plugin-windicss": "^1.7.0",
+    "windicss": "^3.4.3"
   }
 }
