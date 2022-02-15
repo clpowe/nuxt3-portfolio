@@ -12,4 +12,7 @@ export default defineNuxtConfig({
     "@common": "/components/common",
     "@ui": "/components/ui"
   },
+  nitro: {
+    preset: 'azure_functions'
+  }
 })
