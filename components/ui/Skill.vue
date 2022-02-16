@@ -14,7 +14,7 @@
 	h2 {
 		font-family: 'Oswald', sans-serif;
 		text-align: center;
-		@apply font-medium uppercase text-left text-2xl;
+		@apply font-extralight uppercase text-left;
 		letter-spacing: 1rem;
 		font-weight: 100;
 		transition-timing-function: ease;

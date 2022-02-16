@@ -1,6 +1,6 @@
 <template>
 	<div class="background grid place">
-		<!-- <Hero /> -->
+		<Hero />
 	</div>
 </template>
 

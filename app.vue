@@ -19,11 +19,13 @@
 	}
 
 	body {
-		background-size: 400% 400%;
+		font-family: 'Oswald', sans-serif;
+		background-size: 100% 400%;
 		height: 100vh;
 		background-image: linear-gradient(
 			-180deg,
-			var(--orange),
+			var(--pink),
+			var(--blue),
 			var(--blue),
 			var(--green)
 		);
@@ -33,11 +35,11 @@
 		@media (min-width: 640px) {
 			background-image: linear-gradient(
 				-45deg,
-				var(--orange),
+				var(--pink),
 				var(--blue),
 				var(--green)
 			);
-			animation: gradient 15s ease infinite;
+			animation: gradient2 15s ease infinite;
 		}
 	}
 
@@ -50,6 +52,17 @@
 		}
 		100% {
 			background-position: 50% 0%;
+		}
+	}
+	@keyframes gradient2 {
+		0% {
+			background-position: 0% 50%;
+		}
+		50% {
+			background-position: 100% 50%;
+		}
+		100% {
+			background-position: 0% 50%;
 		}
 	}
 

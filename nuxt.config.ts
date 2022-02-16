@@ -6,7 +6,7 @@ export default defineNuxtConfig({
   buildModules: [
     'nuxt-windicss',
     '@vueuse/nuxt',
-    
+
   ],
   alias: {
     "@common": "/components/common",
@@ -14,5 +14,6 @@ export default defineNuxtConfig({
   },
   nitro: {
     preset: 'azure_functions'
-  }
+  },
+  
 })
