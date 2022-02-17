@@ -1,24 +1,26 @@
 <template>
-	<div class="flex flex-col justify-center h-screen">
-		<div class="face mx-auto top">
+	<div class="w-xs px-2 mx-auto text-center">
+		<div class="w-full mx-auto -mb-10">
 			<Top />
 		</div>
-		<div class="text-center text-light-100 justify-center">
-			<div class="welcome">
-				<div class="intro">My name is</div>
-			</div>
-			<div class="font-black uppercase chris">Christopher</div>
-			<div class="font-black uppercase powe">Powe</div>
-			<div class="skills flex gap-4 mx-auto justify-center">
+		<div class="text-center text-light-100">
+			<p class="intro">My name is</p>
+			<!-- <h1 class="chris font-black uppercase block">Christopher</h1> -->
+			<span class="chris uppercase block">Christopher</span><br />
+			<h1 class="powe font-black uppercase block">Powe</h1>
+			<div
+				class="flex gap-4 mx-auto justify-center items-center align-middle w-full"
+			>
 				<Skill skill="Designer" />
 				<Skill skill="Animator" />
 				<Skill skill="Developer" />
 			</div>
 		</div>
-		<div class="face mx-auto">
+		<div class="w-[15rem] mx-auto">
 			<Bottom />
 		</div>
 	</div>
+
 	<!-- <div class="container">
 		<div class="Text">
 			<div class="Name">
@@ -45,6 +47,11 @@
 	import Skill from './Skill.vue'
 	import Top from '../Top.vue'
 	import Bottom from '../Bottom.vue'
+	import lottie from 'lottie-web'
+
+	import { ref, onMounted } from 'vue'
+
+	const anim = ref()
 </script>
 
 <style lang="scss" scoped>
@@ -59,21 +66,20 @@
 
 	.chris {
 		font-size: 2rem;
-		line-height: 0;
-		margin: 0;
+		line-height: 0rem;
+		letter-spacing: 4px;
 	}
 
 	.powe {
-		font-size: 14rem;
-		letter-spacing: -1.5rem;
-		mix-blend-mode: screen;
-		line-height: 110%;
+		display: inline-block;
+		font-size: 8rem;
+		line-height: 6rem;
 	}
 	.intro {
 		font-family: 'Comforter', cursive;
 		color: var(--pink);
 		z-index: 1;
-		font-size: 5rem;
-		margin-bottom: -1.6rem;
+		font-size: 4rem;
+		line-height: 4rem;
 	}
 </style>

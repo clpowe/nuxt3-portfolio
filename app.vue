@@ -20,51 +20,51 @@
 
 	body {
 		font-family: 'Oswald', sans-serif;
-		background-size: 100% 400%;
+		background-size: 100% 100%;
 		height: 100vh;
 		background-image: linear-gradient(
 			-180deg,
-			var(--pink),
+			var(--green),
 			var(--blue),
-			var(--blue),
-			var(--green)
+			var(--pink)
 		);
 
-		animation: gradient 15s ease infinite;
+		// animation: gradient 15s ease infinite;
 
 		@media (min-width: 640px) {
+			background-size: 100% 200%;
 			background-image: linear-gradient(
-				-45deg,
+				45deg,
 				var(--pink),
 				var(--blue),
 				var(--green)
 			);
-			animation: gradient2 15s ease infinite;
+			// animation: gradient2 15s ease infinite;
 		}
 	}
 
-	@keyframes gradient {
-		0% {
-			background-position: 50% 0%;
-		}
-		50% {
-			background-position: 0% 100%;
-		}
-		100% {
-			background-position: 50% 0%;
-		}
-	}
-	@keyframes gradient2 {
-		0% {
-			background-position: 0% 50%;
-		}
-		50% {
-			background-position: 100% 50%;
-		}
-		100% {
-			background-position: 0% 50%;
-		}
-	}
+	// @keyframes gradient {
+	// 	0% {
+	// 		background-position: 50% 0%;
+	// 	}
+	// 	50% {
+	// 		background-position: 0% 100%;
+	// 	}
+	// 	100% {
+	// 		background-position: 50% 0%;
+	// 	}
+	// }
+	// @keyframes gradient2 {
+	// 	0% {
+	// 		background-position: 0% 50%;
+	// 	}
+	// 	50% {
+	// 		background-position: 100% 50%;
+	// 	}
+	// 	100% {
+	// 		background-position: 0% 50%;
+	// 	}
+	// }
 
 	.container {
 		@apply container mx-auto;

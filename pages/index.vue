@@ -1,5 +1,5 @@
 <template>
-	<div class="background grid place">
+	<div class="grid place-content-center h-[80vh]">
 		<Hero />
 	</div>
 </template>

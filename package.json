@@ -16,6 +16,8 @@
     "@nuxtjs/svg": "^0.4.0",
     "gsap": "^3.9.1",
     "install-peers": "^1.0.3",
+    "lottie-web": "^5.8.1",
+    "lottie-web-vue": "^1.2.1",
     "sass": "^1.49.7",
     "vite-plugin-windicss": "^1.7.0",
     "windicss": "^3.4.3"
