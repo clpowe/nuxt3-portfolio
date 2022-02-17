@@ -7,16 +7,22 @@
 				<NuxtLink to="/" class="branding"> Christopher Powe </NuxtLink>
 			</div>
 			<div class="fill-white h-10 hover:animate-bounce">
-				<Github />
+				<a href="https://github.com/clpowe" target="_blank">
+					<Github />
+				</a>
 			</div>
 			<ul
 				class="hidden sm:flex justify-self-end uppercase space-x-9 tracking-widest items-center"
 			>
-				<li text="About">
-					<NuxtLink to="/about" class="z-50">About</NuxtLink>
+				<li>
+					<NuxtLink to="/about" class="z-50">
+						<div text="About" class="link">About</div>
+					</NuxtLink>
 				</li>
-				<li text="Work">
-					<NuxtLink to="/projects">Work</NuxtLink>
+				<li>
+					<NuxtLink to="/projects">
+						<div text="Work" class="link">Work</div>
+					</NuxtLink>
 				</li>
 			</ul>
 		</div>
@@ -32,7 +38,7 @@
 		position: relative;
 		font-family: 'Oswald', sans-serif;
 		font-weight: 400;
-		font-size: 1.5rem;
+		font-size: 1.2rem;
 		z-index: 1;
 
 		&:hover {
@@ -44,13 +50,13 @@
 				text-transform: none;
 				letter-spacing: normal;
 				left: -10px;
-				font-size: 2.4rem;
+				font-size: 2rem;
 			}
 		}
 	}
 
 	ul {
-		li {
+		.link {
 			font-family: 'Oswald', sans-serif;
 			font-weight: 200;
 			text-align: center;

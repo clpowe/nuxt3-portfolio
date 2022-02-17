@@ -15,12 +15,12 @@
 		--orange: #ee7752;
 		--pink: #e73c7e;
 		--blue: #23a6d5;
-		--white: #fffcf9;
+		--white: #eaeaea;
 	}
 
 	body {
 		font-family: 'Oswald', sans-serif;
-		background-size: 100% 100%;
+		background-size: 100% 120%;
 		height: 100vh;
 		background-image: linear-gradient(
 			-180deg,
@@ -32,7 +32,7 @@
 		// animation: gradient 15s ease infinite;
 
 		@media (min-width: 640px) {
-			background-size: 100% 200%;
+			background-size: 100% 150%;
 			background-image: linear-gradient(
 				45deg,
 				var(--pink),

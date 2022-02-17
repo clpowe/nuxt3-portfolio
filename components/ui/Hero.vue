@@ -1,46 +1,28 @@
 <template>
-	<div class="w-xs px-2 mx-auto text-center">
-		<div class="w-full mx-auto -mb-10">
+	<div
+		class="w-xs h-lg px-2 my-24 mx-auto text-center text-[var(--white)] md:(w-md)"
+	>
+		<div class="w-full mix-blend-luminosity mx-auto -mb-8 md:(w-[95%])">
 			<Top />
 		</div>
 		<div class="text-center text-light-100">
-			<p class="intro">My name is</p>
-			<!-- <h1 class="chris font-black uppercase block">Christopher</h1> -->
-			<span class="chris uppercase block">Christopher</span><br />
+			<p class="intro relative">My name is</p>
+
+			<span class="chris text-[var(--white)] uppercase block">Christopher</span
+			><br />
 			<h1 class="powe font-black uppercase block">Powe</h1>
 			<div
-				class="flex gap-4 mx-auto justify-center items-center align-middle w-full"
+				class="flex gap-4 mx-auto justify-center items-center align-middle w-full mt-1"
 			>
 				<Skill skill="Designer" />
 				<Skill skill="Animator" />
 				<Skill skill="Developer" />
 			</div>
 		</div>
-		<div class="w-[15rem] mx-auto">
+		<div class="w-[80%] mix-blend-luminosity mx-auto mt-3 md:(mt-5 w-[75%])">
 			<Bottom />
 		</div>
 	</div>
-
-	<!-- <div class="container">
-		<div class="Text">
-			<div class="Name">
-				<div class="name grid">
-			
-					<h1 class="uppercase text-5xl font-thin tracking-widest">
-						Christopher
-					</h1>
-					<h1 class="powe uppercase text-5xl font-bold">Powe</h1>
-				</div>
-			</div>
-			<div class="Skills">
-				<div class="skills">
-					<Skill skill="Designer" />
-					<Skill skill="Animator" />
-					<Skill skill="Developer" />
-				</div>
-			</div>
-		</div>
-	</div> -->
 </template>
 
 <script setup>
@@ -61,25 +43,41 @@
 	}
 
 	.top {
-		margin-bottom: -5rem;
+		margin-bottom: -2rem;
 	}
 
 	.chris {
 		font-size: 2rem;
 		line-height: 0rem;
 		letter-spacing: 4px;
+		mix-blend-mode: luminosity;
+
+		@media (min-width: 768px) {
+			font-size: 2.5rem;
+		}
 	}
 
 	.powe {
 		display: inline-block;
 		font-size: 8rem;
 		line-height: 6rem;
+		mix-blend-mode: luminosity;
+		color: #eaeaea;
+		@media (min-width: 768px) {
+			font-size: 10rem;
+			line-height: 7.5rem;
+		}
 	}
 	.intro {
 		font-family: 'Comforter', cursive;
 		color: var(--pink);
-		z-index: 1;
-		font-size: 4rem;
-		line-height: 4rem;
+		z-index: 2;
+		font-size: 3rem;
+		line-height: 3rem;
+
+		@media (min-width: 768px) {
+			font-size: 4rem;
+			line-height: 4rem;
+		}
 	}
 </style>
