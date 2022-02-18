@@ -6,8 +6,8 @@
 			<div class="hidden sm:block justify-self-start uppercase tracking-widest">
 				<NuxtLink to="/" class="branding"> Christopher Powe </NuxtLink>
 			</div>
-			<div class="fill-white h-10 hover:animate-bounce">
-				<a href="https://github.com/clpowe" target="_blank">
+			<div class="h-10 hover:animate-bounce">
+				<a href="https://github.com/clpowe" target="_blank" class="fill-white">
 					<Github />
 				</a>
 			</div>
