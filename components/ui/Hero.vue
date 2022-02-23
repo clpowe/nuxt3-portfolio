@@ -2,15 +2,16 @@
 	<div
 		class="w-xs h-lg px-2 my-24 mx-auto text-center text-[var(--white)] md:(w-md)"
 	>
-		<div class="w-full mix-blend-luminosity mx-auto -mb-8 md:(w-[95%])">
+		<div class="w-full mix-blend-luminosity mx-auto md:(w-[95%])">
 			<Top />
 		</div>
-		<div class="text-center text-light-100">
-			<p class="intro relative">My name is</p>
 
+		<div class="text-center text-light-100">
 			<span class="chris text-[var(--white)] uppercase block">Christopher</span
 			><br />
-			<h1 class="powe font-black uppercase block">Powe</h1>
+			<div class="powe font-black uppercase block flex justify-center">
+				Powe
+			</div>
 			<div
 				class="flex gap-4 mx-auto justify-center items-center align-middle w-full mt-1"
 			>
@@ -29,21 +30,39 @@
 	import Skill from './Skill.vue'
 	import Top from '../Top.vue'
 	import Bottom from '../Bottom.vue'
-	import lottie from 'lottie-web'
+	import { Motion } from 'motion/vue'
+	import { spring } from 'motion'
+	import { timeline } from 'motion'
 
 	import { ref, onMounted } from 'vue'
 
-	const anim = ref()
+	const transition = ref({
+		duration: 1,
+		easing: spring({
+			stiffness: 600,
+			damping: 12
+		})
+	})
+
+	const ease = spring({
+		velocity: 1000,
+		restSpeed: 3,
+		stiffness: 600,
+		damping: 12
+	})
 </script>
 
 <style lang="scss" scoped>
+	.headTop {
+		transform-origin: bottom left;
+	}
 	.face {
 		mix-blend-mode: luminosity;
 		width: 28rem;
 	}
 
 	.top {
-		margin-bottom: -2rem;
+		margin-bottom: -1rem;
 	}
 
 	.chris {
@@ -58,8 +77,8 @@
 	}
 
 	.powe {
-		display: inline-block;
 		font-size: 8rem;
+
 		line-height: 6rem;
 		mix-blend-mode: luminosity;
 		color: #eaeaea;

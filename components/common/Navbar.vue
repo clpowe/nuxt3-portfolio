@@ -24,6 +24,11 @@
 						<div text="Work" class="link">Work</div>
 					</NuxtLink>
 				</li>
+				<li>
+					<NuxtLink to="/contact">
+						<div text="Contact" class="link">Contact</div>
+					</NuxtLink>
+				</li>
 			</ul>
 		</div>
 	</nav>
