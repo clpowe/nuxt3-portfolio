@@ -17,6 +17,9 @@
 		</section>
 		<section>
 			<h2>Experience</h2>
+
+			{{ experiences[0].tools }}
+
 			<ExperienceCard />
 		</section>
 		<section>
@@ -31,4 +34,19 @@
 	</div>
 </template>
 
-<script setup></script>
+<script setup>
+	import { ref } from 'vue'
+	import { db } from '../firebase/config'
+	import { collection, getDocs } from 'firebase/firestore'
+
+	const experiences = ref([])
+
+	try {
+		const responce = await getDocs(collection(db, 'experiences'))
+		responce.forEach((exp) => {
+			experiences.value.push({ ...exp.data(), id: exp.id })
+		})
+	} catch (error) {
+		console.log(error)
+	}
+</script>

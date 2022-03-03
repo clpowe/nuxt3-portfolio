@@ -15,6 +15,7 @@
   "dependencies": {
     "@nuxtjs/svg": "^0.4.0",
     "escape-string-regexp": "^5.0.0",
+    "firebase": "^9.6.7",
     "gsap": "^3.9.1",
     "install-peers": "^1.0.3",
     "lottie-web": "^5.8.1",
