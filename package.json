@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "@nuxtjs/svg": "^0.4.0",
+    "animejs": "^3.2.1",
     "escape-string-regexp": "^5.0.0",
     "firebase": "^9.6.7",
     "gsap": "^3.9.1",
@@ -21,7 +22,9 @@
     "lottie-web": "^5.8.1",
     "lottie-web-vue": "^1.2.1",
     "motion": "^10.6.2",
+    "postcss-loader": "^6.2.1",
     "sass": "^1.49.7",
+    "vanilla-tilt": "^1.7.2",
     "vite-plugin-windicss": "^1.7.0",
     "windicss": "^3.4.3"
   }

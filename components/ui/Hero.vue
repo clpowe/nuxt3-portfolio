@@ -1,102 +1,28 @@
 <template>
-	<div
-		class="w-xs h-lg px-2 my-24 mx-auto text-center text-[var(--white)] md:(w-md)"
-	>
-		<div class="w-full mix-blend-luminosity mx-auto md:(w-[95%])">
-			<Top />
-		</div>
-
-		<div class="text-center text-light-100">
-			<span class="chris text-[var(--white)] uppercase block">Christopher</span
-			><br />
-			<div class="powe font-black uppercase block flex justify-center">
-				Powe
-			</div>
-			<div
-				class="flex gap-4 mx-auto justify-center items-center align-middle w-full mt-1"
-			>
-				<Skill skill="Designer" />
-				<Skill skill="Animator" />
-				<Skill skill="Developer" />
-			</div>
-		</div>
-		<div class="w-[80%] mix-blend-luminosity mx-auto mt-3 md:(mt-5 w-[75%])">
-			<Bottom />
-		</div>
+	<div ref="logo" class="logo">
+		<Logo />
 	</div>
 </template>
 
 <script setup>
-	import Skill from './Skill.vue'
-	import Top from '../Top.vue'
-	import Bottom from '../Bottom.vue'
-	import { Motion } from 'motion/vue'
-	import { spring } from 'motion'
-	import { timeline } from 'motion'
-
 	import { ref, onMounted } from 'vue'
+	import Logo from '../Logo.vue'
+	import VanillaTilt from 'vanilla-tilt'
 
-	const transition = ref({
-		duration: 1,
-		easing: spring({
-			stiffness: 600,
-			damping: 12
+	const logo = ref()
+
+	onMounted(() => {
+		VanillaTilt.init(logo.value, {
+			max: 25,
+			speed: 400
 		})
-	})
-
-	const ease = spring({
-		velocity: 1000,
-		restSpeed: 3,
-		stiffness: 600,
-		damping: 12
 	})
 </script>
 
-<style lang="scss" scoped>
-	.headTop {
-		transform-origin: bottom left;
-	}
-	.face {
-		mix-blend-mode: luminosity;
-		width: 28rem;
-	}
-
-	.top {
-		margin-bottom: -1rem;
-	}
-
-	.chris {
-		font-size: 2rem;
-		line-height: 0rem;
-		letter-spacing: 4px;
-		mix-blend-mode: luminosity;
-
-		@media (min-width: 768px) {
-			font-size: 2.5rem;
-		}
-	}
-
-	.powe {
-		font-size: 8rem;
-
-		line-height: 6rem;
-		mix-blend-mode: luminosity;
-		color: #eaeaea;
-		@media (min-width: 768px) {
-			font-size: 10rem;
-			line-height: 7.5rem;
-		}
-	}
-	.intro {
-		font-family: 'Comforter', cursive;
-		color: var(--pink);
-		z-index: 2;
-		font-size: 3rem;
-		line-height: 3rem;
-
-		@media (min-width: 768px) {
-			font-size: 4rem;
-			line-height: 4rem;
-		}
+<style>
+	.logo {
+		width: 100%;
+		height: 100%;
+		mix-blend-mode: overlay;
 	}
 </style>

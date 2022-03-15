@@ -17,10 +17,9 @@
 		</section>
 		<section>
 			<h2>Experience</h2>
-
-			{{ experiences[0].tools }}
-
-			<ExperienceCard />
+			<div v-for="experience in experiences" key="experience.id">
+				<ExperienceCard :experience="experience" />
+			</div>
 		</section>
 		<section>
 			<h2>Skills</h2>
