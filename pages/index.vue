@@ -7,6 +7,8 @@
 			Work
 			<MediaSlider>
 				<div>1</div>
+				<div>1</div>
+				<div>1</div>
 			</MediaSlider>
 		</section>
 	</div>
