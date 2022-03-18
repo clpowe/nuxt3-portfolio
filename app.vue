@@ -30,6 +30,10 @@
 		--white: #eaeaea;
 	}
 
+	html {
+		scroll-behavior: smooth;
+	}
+
 	body {
 		font-family: 'Oswald', sans-serif;
 		background-size: 100% 120%;
@@ -53,29 +57,6 @@
 			// animation: gradient2 15s ease infinite;
 		}
 	}
-
-	// @keyframes gradient {
-	// 	0% {
-	// 		background-position: 50% 0%;
-	// 	}
-	// 	50% {
-	// 		background-position: 0% 100%;
-	// 	}
-	// 	100% {
-	// 		background-position: 50% 0%;
-	// 	}
-	// }
-	// @keyframes gradient2 {
-	// 	0% {
-	// 		background-position: 0% 50%;
-	// 	}
-	// 	50% {
-	// 		background-position: 100% 50%;
-	// 	}
-	// 	100% {
-	// 		background-position: 0% 50%;
-	// 	}
-	// }
 
 	.container {
 		@apply container mx-auto;

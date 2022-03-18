@@ -6,9 +6,7 @@
 		<section>
 			Work
 			<MediaSlider>
-				<div>1</div>
-				<div>1</div>
-				<div>1</div>
+				<div class="project1 h-48 w-78 bg-light-700">1</div>
 			</MediaSlider>
 		</section>
 	</div>
@@ -19,4 +17,8 @@
 	import MediaSlider from '@/components/mediaSlider.vue'
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+	.project1 {
+		background-image: url('/gammage.png');
+	}
+</style>
