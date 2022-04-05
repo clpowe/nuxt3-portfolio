@@ -28,6 +28,7 @@
 	body {
 		font-family: 'Oswald', sans-serif;
 		background-size: 100% 120%;
+		height: 100%;
 
 		background-image: radial-gradient(
 			ellipse at top,
@@ -35,7 +36,8 @@
 			var(--blue),
 			var(--pink)
 		);
-
+		background-repeat: repeat;
+		background-size: cover;
 		// animation: gradient 15s ease infinite;
 
 		@media (min-width: 640px) {
@@ -45,6 +47,8 @@
 				var(--blue) 40%,
 				var(--pink) 110%
 			);
+			background-repeat: repeat;
+			background-size: cover;
 			// animation: gradient2 15s ease infinite;
 		}
 	}

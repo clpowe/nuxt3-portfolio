@@ -25,16 +25,16 @@
 						<div text="About" class="link">About</div>
 					</NuxtLink>
 				</li>
-				<li>
-					<NuxtLink to="/projects">
+				<!-- <li>
+					<NuxtLink to="#work">
 						<div text="Work" class="link">Work</div>
 					</NuxtLink>
-				</li>
-				<li>
+				</li> -->
+				<!-- <li>
 					<NuxtLink to="/contact">
 						<div text="Contact" class="link">Contact</div>
 					</NuxtLink>
-				</li>
+				</li> -->
 			</ul>
 		</div>
 	</nav>
