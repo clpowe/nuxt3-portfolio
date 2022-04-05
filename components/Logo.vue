@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<div class="top w-full mix-blend-luminosity mx-auto md:(w-[95%])">
+		<div class="w-[85%] mix-blend-luminosity mx-auto md:w-[24rem]">
 			<Top />
 		</div>
 
@@ -20,7 +20,7 @@
 				<Skill skill="Developer" />
 			</div>
 		</div>
-		<div class="w-[80%] mix-blend-luminosity mx-auto mt-3 md:(mt-5 w-[75%])">
+		<div class="w-[80%] mix-blend-luminosity mx-auto mt-3 md:(mt-5 w-[22rem])">
 			<Bottom />
 		</div>
 	</div>

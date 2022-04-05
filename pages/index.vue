@@ -5,9 +5,20 @@
 		</div>
 		<section>
 			Work
-			<MediaSlider>
-				<div class="project1 h-48 w-78 bg-light-700">1</div>
-			</MediaSlider>
+			<div>
+				<NuxtLink to="/gammunition" class="z-30">
+					<div class="gammunition h-48 w-78 bg-center bg-contain"></div>
+				</NuxtLink>
+				<NuxtLink to="/gammunition" class="z-30">
+					<div class="agape h-48 w-78 bg-center bg-contain"></div>
+				</NuxtLink>
+				<NuxtLink to="/gammunition" class="z-30">
+					<div class="easynote h-48 w-78 bg-center bg-contain"></div>
+				</NuxtLink>
+				<NuxtLink to="/gammunition" class="z-30">
+					<div class="gammunition h-48 w-78 bg-center bg-contain"></div>
+				</NuxtLink>
+			</div>
 		</section>
 	</div>
 </template>
@@ -18,7 +29,13 @@
 </script>
 
 <style lang="scss">
-	.project1 {
-		background-image: url('/gammage.png');
+	.gammunition {
+		background-image: url('/gammunitionlink.png');
+	}
+	.easynote {
+		background-image: url('/Easklink.png');
+	}
+	.agape {
+		background-image: url('/Agapelink.png');
 	}
 </style>
