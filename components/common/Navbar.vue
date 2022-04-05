@@ -3,16 +3,22 @@
 		<div
 			class="container w-full grid text-white py-5 my-5 px-6 place-items-center sm:(grid-cols-3)"
 		>
-			<div class="hidden sm:block justify-self-start uppercase tracking-widest">
-				<NuxtLink to="/" class="branding"> Christopher Powe </NuxtLink>
+			<div
+				class="hidden sm:block justify-self-start uppercase tracking-widest z-50"
+			>
+				<NuxtLink to="/" class="branding z-50"> Christopher Powe </NuxtLink>
 			</div>
-			<div class="h-10 hover:animate-bounce">
-				<a href="https://github.com/clpowe" target="_blank" class="fill-white">
+			<div class="h-10 hover:animate-bounce z-50">
+				<a
+					href="https://github.com/clpowe"
+					target="_blank"
+					class="fill-white z-50"
+				>
 					<Github />
 				</a>
 			</div>
 			<ul
-				class="hidden sm:flex justify-self-end uppercase space-x-9 tracking-widest items-center"
+				class="hidden sm:flex justify-self-end uppercase space-x-9 tracking-widest items-center z-50"
 			>
 				<li>
 					<NuxtLink to="/about" class="z-50">

@@ -2,7 +2,11 @@
 	<div>
 		<section>
 			<div class="mx-auto max-w-3xl grid grid-cols-1 md:grid-cols-2">
-				<img src="/PhotoAbout.png" alt="" class="w-full" />
+				<img
+					src="https://ik.imagekit.io/cpds/Portfolio/PhotoAbout_y38l55Nf4.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649120239550"
+					alt=""
+					class="w-full"
+				/>
 				<div
 					class="text-light-300 text-base flex flex-col justify-center space-y-2"
 				>

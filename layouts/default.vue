@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<div class="bg">
 		<Nav />
 		<slot />
 		<!-- <Footer /> -->
@@ -24,4 +24,28 @@
 	provide('projects', projects)
 </script>
 
-<style></style>
+<style lang="scss">
+	body {
+		font-family: 'Oswald', sans-serif;
+		background-size: 100% 120%;
+
+		background-image: radial-gradient(
+			ellipse at top,
+			var(--green),
+			var(--blue),
+			var(--pink)
+		);
+
+		// animation: gradient 15s ease infinite;
+
+		@media (min-width: 640px) {
+			background-image: radial-gradient(
+				circle at top center,
+				var(--green) 0%,
+				var(--blue) 40%,
+				var(--pink) 110%
+			);
+			// animation: gradient2 15s ease infinite;
+		}
+	}
+</style>
