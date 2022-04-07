@@ -13,6 +13,7 @@
     "vue-template-compiler": "^2.6.14"
   },
   "dependencies": {
+    "@braid/vue-formulate": "^2.5.3",
     "@nuxtjs/svg": "^0.4.0",
     "animejs": "^3.2.1",
     "escape-string-regexp": "^5.0.0",

@@ -30,11 +30,11 @@
 						<div text="Work" class="link">Work</div>
 					</NuxtLink>
 				</li> -->
-				<!-- <li>
+				<li>
 					<NuxtLink to="/contact">
 						<div text="Contact" class="link">Contact</div>
 					</NuxtLink>
-				</li> -->
+				</li>
 			</ul>
 		</div>
 	</nav>
