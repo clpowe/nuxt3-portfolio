@@ -6,7 +6,9 @@
 			<div
 				class="hidden sm:block justify-self-start uppercase tracking-widest z-50"
 			>
-				<NuxtLink to="/" class="branding z-50"> Christopher Powe </NuxtLink>
+				<NuxtLink :to="{ name: 'index' }" class="branding z-50">
+					Christopher Powe
+				</NuxtLink>
 			</div>
 			<div class="h-10 hover:animate-bounce z-50">
 				<a

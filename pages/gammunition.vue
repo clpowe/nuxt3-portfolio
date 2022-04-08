@@ -164,7 +164,7 @@
 		@media (min-width: 768px) {
 			background-image: url('https://ik.imagekit.io/cpds/Portfolio/Gammunition_Banner/GammunitionSm_2KEuPXasK.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649129424451');
 		}
-		@media (min-width: 1280px) and (max-width: 1535.9px) {
+		@media (min-width: 1280px) {
 			background-image: url('https://ik.imagekit.io/cpds/Portfolio/Gammunition_Banner/GammunitionLg_aK9gIrxXS.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649129424798');
 		}
 		@media (min-width: 1536px) {
