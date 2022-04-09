@@ -1,7 +1,9 @@
 <template>
 	<div class="bg">
 		<Nav />
-		<slot />
+		<KeepAlive>
+			<slot />
+		</KeepAlive>
 		<!-- <Footer /> -->
 	</div>
 </template>

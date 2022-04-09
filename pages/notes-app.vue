@@ -1,30 +1,32 @@
 <template>
-	<div
-		class="absolute top-0 body w-full bg-cover bg-center bg-no-repeat h-[824px] z-0"
-	></div>
-	<div class="bg-light-800 pb-32 pt-[800px] px-[10%]">
-		<div class="max-w-screen-md mx-auto space-y-20">
-			<div class="max-w-screen-md mx-auto text-center">
-				<h1>Easy Note</h1>
-				<p class="font-sans">A note taking app powered by vue and firebase</p>
-			</div>
-			<div class="flex flex-wrap gap-2">
-				<div v-for="logo in logos" class="mx-auto">
-					<div v-html="logo.code" class="mx-auto w-20"></div>
+	<div>
+		<div
+			class="absolute top-0 body w-full bg-cover bg-center bg-no-repeat h-[824px] z-0"
+		></div>
+		<div class="bg-light-800 pb-32 pt-[800px] px-[10%]">
+			<div class="max-w-screen-md mx-auto space-y-20">
+				<div class="max-w-screen-md mx-auto text-center">
+					<h1>Easy Note</h1>
+					<p class="font-sans">A note taking app powered by vue and firebase</p>
 				</div>
+				<div class="flex flex-wrap gap-2">
+					<div v-for="logo in logos" class="mx-auto">
+						<div v-html="logo.code" class="mx-auto w-20"></div>
+					</div>
+				</div>
+				<img
+					src="https://ik.imagekit.io/cpds/Portfolio/Notes/NotesOne_Iq8WsRo5e.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649152621359"
+					alt=""
+				/>
+				<img
+					src="https://ik.imagekit.io/cpds/Portfolio/Notes/EasyNoteLayout_23jiZD7FJ.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649152618646"
+					alt=""
+				/>
+				<img
+					src="https://ik.imagekit.io/cpds/Portfolio/Notes/Notessystem_z6yi8dKc-.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649152616343"
+					alt=""
+				/>
 			</div>
-			<img
-				src="https://ik.imagekit.io/cpds/Portfolio/Notes/NotesOne_Iq8WsRo5e.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649152621359"
-				alt=""
-			/>
-			<img
-				src="https://ik.imagekit.io/cpds/Portfolio/Notes/EasyNoteLayout_23jiZD7FJ.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649152618646"
-				alt=""
-			/>
-			<img
-				src="https://ik.imagekit.io/cpds/Portfolio/Notes/Notessystem_z6yi8dKc-.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649152616343"
-				alt=""
-			/>
 		</div>
 	</div>
 </template>

@@ -8,16 +8,16 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
 
   ],
-  
   alias: {
     "@common": "/components/common",
     "@ui": "/components/ui"
   },
   router: {
-    routeNameSplitter: '/'
+    routeNameSplitter: '/',
+    trailingSlash: false
   },
-  nitro: {
-    preset: 'azure_functions'
-  },
+  // nitro: {
+  //   preset: 'azure_functions'
+  // },
   
 })

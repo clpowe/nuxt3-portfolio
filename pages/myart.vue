@@ -1,35 +1,37 @@
 <template>
-	<div
-		class="absolute top-0 body w-full bg-cover bg-center bg-no-repeat h-[824px] z-0"
-	></div>
-	<div class="bg-light-800 pb-32 pt-[800px] px-[10%]">
-		<div class="max-w-screen-md mx-auto space-y-20">
-			<div class="max-w-screen-md mx-auto text-center">
-				<h1>My Art</h1>
-				<p class="font-sans">Just some fun with Photoshop</p>
-			</div>
-			<div class="flex flex-wrap gap-2">
-				<div v-for="logo in logos" class="mx-auto">
-					<div v-html="logo.code" class="mx-auto w-20"></div>
+	<div>
+		<div
+			class="absolute top-0 body w-full bg-cover bg-center bg-no-repeat h-[824px] z-0"
+		></div>
+		<div class="bg-light-800 pb-32 pt-[800px] px-[10%]">
+			<div class="max-w-screen-md mx-auto space-y-20">
+				<div class="max-w-screen-md mx-auto text-center">
+					<h1>My Art</h1>
+					<p class="font-sans">Just some fun with Photoshop</p>
 				</div>
-			</div>
-			<img
-				src="https://ik.imagekit.io/cpds/Portfolio/ArtWork/StephCurry_m7GXsrw8m.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649165899716"
-				alt=""
-			/>
-			<img
-				src="https://ik.imagekit.io/cpds/Portfolio/ArtWork/DejounteMurray_MUvYIi-mb.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1649165897673"
-				alt=""
-			/>
-			<img
-				src="https://ik.imagekit.io/cpds/Portfolio/ArtWork/Happy_Birthday-1_nVL3Oz4wO.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649165899806"
-				alt=""
-			/>
+				<div class="flex flex-wrap gap-2">
+					<div v-for="logo in logos" class="mx-auto">
+						<div v-html="logo.code" class="mx-auto w-20"></div>
+					</div>
+				</div>
+				<img
+					src="https://ik.imagekit.io/cpds/Portfolio/ArtWork/StephCurry_m7GXsrw8m.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649165899716"
+					alt=""
+				/>
+				<img
+					src="https://ik.imagekit.io/cpds/Portfolio/ArtWork/DejounteMurray_MUvYIi-mb.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1649165897673"
+					alt=""
+				/>
+				<img
+					src="https://ik.imagekit.io/cpds/Portfolio/ArtWork/Happy_Birthday-1_nVL3Oz4wO.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649165899806"
+					alt=""
+				/>
 
-			<img
-				src="https://ik.imagekit.io/cpds/Portfolio/ArtWork/Lonnie_xUiF3Mg-F.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649165898594"
-				alt=""
-			/>
+				<img
+					src="https://ik.imagekit.io/cpds/Portfolio/ArtWork/Lonnie_xUiF3Mg-F.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649165898594"
+					alt=""
+				/>
+			</div>
 		</div>
 	</div>
 </template>

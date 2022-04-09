@@ -1,30 +1,34 @@
 <template>
-	<div
-		class="absolute top-0 body w-full bg-cover bg-center bg-no-repeat h-[824px] z-0"
-	></div>
-	<div class="bg-light-800 pb-32 pt-[800px] px-[10%]">
-		<div class="max-w-screen-md mx-auto space-y-20">
-			<div class="max-w-screen-md mx-auto text-center">
-				<h1>Gammunition.info</h1>
-				<p class="font-sans">Landing page for Gammunition Firearms Training</p>
-			</div>
-			<div class="flex flex-wrap gap-2">
-				<div v-for="logo in logos" class="mx-auto">
-					<div v-html="logo.code" class="mx-auto w-20"></div>
+	<div>
+		<div
+			class="absolute top-0 body w-full bg-cover bg-center bg-no-repeat h-[824px] z-0"
+		></div>
+		<div class="bg-light-800 pb-32 pt-[800px] px-[10%]">
+			<div class="max-w-screen-md mx-auto space-y-20">
+				<div class="max-w-screen-md mx-auto text-center">
+					<h1>Gammunition.info</h1>
+					<p class="font-sans">
+						Landing page for Gammunition Firearms Training
+					</p>
 				</div>
+				<div class="flex flex-wrap gap-2">
+					<div v-for="logo in logos" class="mx-auto">
+						<div v-html="logo.code" class="mx-auto w-20"></div>
+					</div>
+				</div>
+				<img
+					src="https://ik.imagekit.io/cpds/Portfolio/Gammunition_Banner/GammunitionOne_2aeQp8MMK.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649150561963"
+					alt=""
+				/>
+				<img
+					src="https://ik.imagekit.io/cpds/Portfolio/Gammunition_Banner/GammunitionTwo_befCpNwuK.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649150560903"
+					alt=""
+				/>
+				<img
+					src="https://ik.imagekit.io/cpds/Portfolio/Gammunition_Banner/04_c8m7Pfa4k.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649150561248"
+					alt=""
+				/>
 			</div>
-			<img
-				src="https://ik.imagekit.io/cpds/Portfolio/Gammunition_Banner/GammunitionOne_2aeQp8MMK.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649150561963"
-				alt=""
-			/>
-			<img
-				src="https://ik.imagekit.io/cpds/Portfolio/Gammunition_Banner/GammunitionTwo_befCpNwuK.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649150560903"
-				alt=""
-			/>
-			<img
-				src="https://ik.imagekit.io/cpds/Portfolio/Gammunition_Banner/04_c8m7Pfa4k.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649150561248"
-				alt=""
-			/>
 		</div>
 	</div>
 </template>
@@ -164,8 +168,11 @@
 		@media (min-width: 768px) {
 			background-image: url('https://ik.imagekit.io/cpds/Portfolio/Gammunition_Banner/GammunitionSm_2KEuPXasK.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649129424451');
 		}
+		@media (min-width: 1024px) {
+			background-image: url('https://ik.imagekit.io/cpds/Portfolio/Gammunition_Banner/GammunitionXL_L6P_2X47D.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649129424784');
+		}
 		@media (min-width: 1280px) {
-			background-image: url('https://ik.imagekit.io/cpds/Portfolio/Gammunition_Banner/GammunitionLg_aK9gIrxXS.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649129424798');
+			background-image: url('https://ik.imagekit.io/cpds/Portfolio/Gammunition_Banner/GammunitionMd_ja6qX-dUi.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649129424747');
 		}
 		@media (min-width: 1536px) {
 			background-image: url('https://ik.imagekit.io/cpds/Portfolio/Gammunition_Banner/GammunitionXL_L6P_2X47D.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649129424784');

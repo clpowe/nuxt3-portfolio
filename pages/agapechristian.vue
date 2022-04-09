@@ -1,26 +1,28 @@
 <template>
-	<div
-		class="absolute top-0 body w-full bg-cover bg-center bg-no-repeat h-[824px] z-0"
-	></div>
-	<div class="bg-light-800 pb-32 pt-[800px] px-[10%]">
-		<div class="max-w-screen-md mx-auto space-y-20">
-			<div class="max-w-screen-md mx-auto text-center">
-				<h1>Agape Christian Bar Prep</h1>
-				<p class="font-sans">Website for Agape bar preperation services</p>
-			</div>
-			<div class="flex flex-wrap gap-2">
-				<div v-for="logo in logos" class="mx-auto">
-					<div v-html="logo.code" class="mx-auto w-20"></div>
+	<div>
+		<div
+			class="absolute top-0 body w-full bg-cover bg-center bg-no-repeat h-[824px] z-0"
+		></div>
+		<div class="bg-light-800 pb-32 pt-[800px] px-[10%]">
+			<div class="max-w-screen-md mx-auto space-y-20">
+				<div class="max-w-screen-md mx-auto text-center">
+					<h1>Agape Christian Bar Prep</h1>
+					<p class="font-sans">Website for Agape bar preperation services</p>
 				</div>
+				<div class="flex flex-wrap gap-2">
+					<div v-for="logo in logos" class="mx-auto">
+						<div v-html="logo.code" class="mx-auto w-20"></div>
+					</div>
+				</div>
+				<img
+					src="https://ik.imagekit.io/cpds/Portfolio/Agape/AgapeOne_PWB01nYaj.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649162197236"
+					alt=""
+				/>
+				<img
+					src="https://ik.imagekit.io/cpds/Portfolio/Agape/AgapeTwo_PVBQX4GPc.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649162196812"
+					alt=""
+				/>
 			</div>
-			<img
-				src="https://ik.imagekit.io/cpds/Portfolio/Agape/AgapeOne_PWB01nYaj.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649162197236"
-				alt=""
-			/>
-			<img
-				src="https://ik.imagekit.io/cpds/Portfolio/Agape/AgapeTwo_PVBQX4GPc.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649162196812"
-				alt=""
-			/>
 		</div>
 	</div>
 </template>
