@@ -13,7 +13,7 @@ export default defineNuxtConfig({
     "@ui": "/components/ui"
   },
   router: {
-    routeNameSplitter: '/',
+    
     trailingSlash: false
   },
   // nitro: {

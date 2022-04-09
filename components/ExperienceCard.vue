@@ -11,7 +11,7 @@
 				{{ experience.brief }}
 			</p>
 		</div>
-		<nuxt-link to="/">View project</nuxt-link>
+		<a :href="experience.link" target="_blank">View project</a>
 	</div>
 </template>
 
@@ -23,6 +23,7 @@
 		date: String
 		brief: String
 		role: String
+		link: String
 		tools: String[]
 	}
 
